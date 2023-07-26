@@ -37,7 +37,7 @@ ul {
 
 
 /* Utilities */
-.clr{
+.clr {
     color: var(--primary-text-color);
 }
 
@@ -108,6 +108,7 @@ ul {
 /* Top banner */
 
 .top-banner {
+    z-index: 1;
     width: 100%;
     position: fixed;
     color: white;
@@ -123,6 +124,7 @@ ul {
 }
 
 /* Navigation */
+
 .main-nav {
     padding-top: 60px;
 }
@@ -143,12 +145,7 @@ ul {
 
 .nav-container {
     justify-content: center;
-    flex-direction: row;
 }
-
-/* .nav-li .active {
-    color: var(--primary-text-color);
-} */
 
 .nav-li {
     gap: 60px;
@@ -158,8 +155,7 @@ ul {
 
 .nav-btn {
     position: absolute;
-    top: 50px;
-    right: 20px;
+    right: 40px;
 }
 
 /* Dropdown Button */
@@ -219,7 +215,6 @@ ul {
     top: 50%;
     left: 50%;
 }
-
 
 
 
@@ -292,7 +287,7 @@ ul {
 }
 
 .sec2-skill-container {
-    justify-content: space-between;
+    justify-content: center;
     gap: 80px;
     max-width: 1400px;
 }
@@ -494,6 +489,7 @@ ul {
     background-color: var(--primary-darker);
 
 }
+
 .sec2-skillset p {
     font-weight: bolder;
     color: white;
@@ -548,6 +544,10 @@ ul {
 }
 
 .sec3-projects .pro:hover {
+    background-color: white;
+    transform: scale(1.1);
+    /* transform: rotate(10deg); */
+    /* z-index: 2; */
     /* background: rgb(237, 235, 235); */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
@@ -602,7 +602,6 @@ ul {
 
 .about-head h3 {
     font-family: "Indie Flower" !important;
-    position: relative;
     left: 30%;
     margin-bottom: 20px;
     font-weight: 600;
@@ -665,9 +664,14 @@ ul {
 
 
 .sec4-image {
+    /* transition: .5s; */
     justify-content: center;
     gap: 60px;
 }
+
+/* .sec4-image:hover>:not(:hover){
+    opacity: .1;
+} */
 
 .sec4-image a img {
     /* box-shadow: var(--box-shadow); */
@@ -827,4 +831,172 @@ i:hover {
 .sec5-social-handles a {
     padding-top: 12px;
     padding-left: 39px;
+}
+
+
+
+@media (max-width: 630px) {
+
+    * {
+        font-size: medium;
+        /* background-color: wheat; */
+    }
+
+
+    /* Utilities edit */
+
+    .primary-button {
+        padding: 10px 8px;
+    }
+
+    .secondary-button {
+        padding: 10px 8px;
+    }
+
+    /* TOp banner */
+    .top-banner{
+        width: 956px;
+    }
+
+    /* Navigation  */
+
+    .main-nav {
+        padding-top: 60px;
+        width: 956px;
+        margin-bottom: 40px;
+    }
+
+    .nav-container {
+        justify-content: center;
+        position: relative;
+    }
+
+    .nav-li li {
+        margin-left: 30px;
+        padding-right:5px;
+    }
+
+    .nav-btn {
+        position: absolute;
+        right: 60px;
+    }
+
+    /* Section 1 */
+
+    .sec-1-container {
+        width: 880px;
+        /* border: 2px solid red; */
+    }
+
+    .about-img {
+        background-size: 300px;
+        background-position: 43px 5px;
+    }
+
+    .head-2 span {
+        font-size: 2.4rem;
+        margin-bottom: 9px;
+    }
+
+
+    .about-img img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .about-me a i {
+        font-size: 30px;
+    }
+
+    .sec1-btn {
+        padding-top: 15px;
+    }
+
+    .sec1-btn a,
+    p {
+        margin-right: 5px;
+    }
+
+    /* Section 2 */
+    .sec2-skills {
+        padding: 0;
+        width: 959px;
+        /* border: 3px solid black; */
+    }
+
+    /*inner circle*/
+    /* .sec2-circle-container {
+        display: none;
+    } */
+    
+    /*outer circle*/
+    /* .sec2-circles {
+        display: none;
+    } */
+    .circle{
+        display: none;
+    }
+    
+    
+    /* Left skill section 2 */
+    
+    .sec2-skills {
+        background: none;
+    }
+    
+    .sec2-skill-container {
+        gap: 0px;
+        background: var(--primary-text-color);
+        padding-top: 20px;
+    }
+    
+    .sec2-container-content {
+        width: 856px;
+        flex-direction: row;
+        /* justify-content: center; */
+    }
+    
+    .sec2-skillset {
+        width: 40%;
+        margin-top: 40px;
+    }
+    
+    /* Section 3 projects */
+    
+    .sec3-projects {
+        width: 956px;
+        padding: var(--padding-inline-section);
+    }
+
+    /* About me section-4 */
+
+    .sec4-about-me{
+        width: 958px;
+    }
+    .about-me-container{
+        
+    }
+    .first-container{
+        flex-direction: column;
+    }
+    .sec4-about-img img{
+        width: 850px !important;
+        height: 850px !important;
+    }
+    .about-head h1{
+        text-align: center;
+    }
+    .about-head h3{
+        left: 40%;
+    }
+    /* Contact section-5 */
+
+    .sec5-contact{
+        min-width: 958px;
+        padding-bottom: 30px;
+    }
+    .footer{
+        width: 957px;
+    }
+
 }
