@@ -1,14 +1,3 @@
-function clicked(element) {
-    let inputs = document.querySelectorAll(".contact-input");
-
-    for (let i = 0; i < inputs.length; i++) {
-        if (inputs[i] === element) {
-            inputs[i].style.border = "2px solid #2EB4A7"; // Apply the border to the clicked input
-        } else {
-            inputs[i].style.border = "3px solid whitesmoke" // remain the default border the border 
-        }
-    }
-}
 // sec4ImageLinks.forEach(link => {
 //     link.addEventListener('mouseover', () => {
 //         spanWord.style.display = 'inline';
@@ -74,3 +63,72 @@ sec4ImageLinks.forEach(link => {
     })
 });
 
+// Pop up
+let sections = document.getElementsByTagName("section")
+// let hr_tag = document.getElementsByTagName("hr")
+let pop_up = document.getElementById('pop-up')
+let pop_up_i=pop_up.getElementsByTagName('i')[0]
+
+setTimeout(() => {
+    pop_up_add()
+}, 2000)
+setTimeout(() => {
+    pop_up_remove()
+}, 8000)
+
+function pop_up_add() {
+    pop_up.removeAttribute('hidden')
+    for (let index = 0; index < sections.length; index++) {
+        // sections[index].setAttribute('hidden', 'true')
+        sections[index].style.opacity = '.1'
+    }
+}
+function pop_up_remove() {
+    pop_up.setAttribute('hidden', 'true')
+    for (let index = 0; index < sections.length; index++) {
+        // sections[index].removeAttribute('hidden')
+        sections[index].style.opacity = '1'
+    }
+}
+pop_up_i.addEventListener('click',pop_up_remove)
+
+
+
+// sections.addEventListener('sc', () => {
+    
+// });
+
+// for (let i = 0; i < sections.length; i++) {
+//     sections[i].style.color='red'
+// }
+
+
+// function reveal() {
+//     var reveals = document.querySelectorAll(".reveal");
+  
+//     for (var i = 0; i < reveals.length; i++) {
+//       var windowHeight = window.innerHeight;
+//       var elementTop = reveals[i].getBoundingClientRect().top;
+//       var elementVisible = 10;
+  
+//       if (elementTop < windowHeight - elementVisible) {
+//         reveals[i].classList.add("active");
+//       } else {
+//         reveals[i].classList.remove("active");
+//       }
+//     }
+//   }
+  
+let scroll_btn=document.getElementById('scroll-btn')
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 150) {
+        scroll_btn.style.display = 'block';
+    } else {
+        scroll_btn.style.display = 'none';
+    }
+});
+
+scroll_btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
