@@ -4,14 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon-modified.png" type="image/x-icon">
     <title>Portfolio | Sagar Singh</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <div class="ask-btn"><a href="#contact" class="primary-button">Ask ?<i
+    <div hidden id="pop-up" class=" pop-up-cont">
+        <div  class="pop-up">
+            <div class="pop-icon">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <div class="pop-data">
+                <p>Hey there website is under maintainance</p>
+                <a href="#" class="primary-button">Help me Out</a>
+                <!-- <img src="./img/Rolling Chair (Reel 2017).gif"> -->
+            </div>
+        </div>
+    </div>
+    <div class="ask-btn"><a title="hellio" href="#contact" class="primary-button">Ask ?<i
                 class="fa-solid fa-messages-question fa-2xl"></i></a>
+    </div>
+    <div id="scroll-btn" class="scroll-top"><a title="hellio" href="#contact" class="primary-button"><i class="fa-solid fa-angles-up fa-bounce"></i></a>
     </div>
 
     <div class="top-banner">
@@ -48,7 +62,10 @@
     <!-- Section 1 of info -->
 
     <section class="sec-1">
-        <div class="container flex sec-1-container">
+        <svg class="svg1" height="100" width="100">
+            <circle cx="50" cy="50" r="50" fill="#2EB4A7" />
+        </svg>
+            <div class="container flex sec-1-container">
             <div class="about-me">
                 <h1>Welcome,</h1>
                 <h1 class="head-2">I'm <span id="sec1-name">Sagar Singh</span></h1>
@@ -204,11 +221,14 @@
             </div>
             <div class="second-container flex">
                 <a href="#"><i class="fa-solid fa-calendar-days"></i>23-12-2003</a>
-                <a href="https://goo.gl/maps/PWRaBnxmRtmBQsYv8" target="_blank"><i class="fa-sharp fa-solid fa-location-dot"></i>Satna, Madhya Pradesh</a>
+                <a href="https://goo.gl/maps/PWRaBnxmRtmBQsYv8" target="_blank"><i
+                        class="fa-sharp fa-solid fa-location-dot"></i>Satna, Madhya Pradesh</a>
                 <a href="#"><i class="fa-sharp fa-solid fa-phone"></i>+91-1234567890</a>
                 <a href="#"><i class="fa-solid fa-paper-plane"></i>Mail | Telegram | Instagram | linkedin</a>
-                <a href="https://goo.gl/maps/c9C1baimqsfkPbzw8" target="_blank"><i class="fa-solid fa-school"></i>Aaditya English Hr. Sec. School</a>
-                <a href="https://www.google.com/maps?q=24.568950,80.793230" target="_blank"><i class="fa-solid fa-user-graduate"></i>Aks University, Satna</a>
+                <a href="https://goo.gl/maps/c9C1baimqsfkPbzw8" target="_blank"><i
+                        class="fa-solid fa-school"></i>Aaditya English Hr. Sec. School</a>
+                <a href="https://www.google.com/maps?q=24.568950,80.793230" target="_blank"><i
+                        class="fa-solid fa-user-graduate"></i>Aks University, Satna</a>
             </div>
 
             <div class="line"></div>
@@ -219,10 +239,10 @@
                     <p>Click images to see the skill level</p>
                     <span> Skills :</span>
                     <div class="span-word">
-                       <i class="clr fa-solid fa-star"></i>
-                       <i class="clr fa-solid fa-star"></i>
-                       <i class="clr fa-solid fa-star"></i>
-                       <i class="clr fa-solid fa-star"></i>
+                        <i class="clr fa-solid fa-star"></i>
+                        <i class="clr fa-solid fa-star"></i>
+                        <i class="clr fa-solid fa-star"></i>
+                        <i class="clr fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                         <!-- Star icons will be added dynamically here -->
                     </div>
@@ -240,7 +260,7 @@
     </section>
     <br>
     <br>
-    <hr>
+    <hr style="min-width: 957px;">
 
     <section class="sec5-contact" id="contact">
         <div class="container  sec5-container">
@@ -261,7 +281,7 @@
             <div class="sec5-form">
                 <P>Let's get in touch. Send me a message:</P>
                 <label>Name : </label>
-                <input onclick="clicked(this)" class="contact-input" type="text" placeholder="Name" required>
+                <input class="contact-input" type="text" placeholder="Name" required>
                 <br>
                 <label>Email : </label>
                 <input onclick="clicked(this)" class="contact-input" type="email" placeholder="Email" required>
@@ -278,7 +298,7 @@
 
     </section>
     <br><br>
-    <hr>
+    <hr style="min-width: 957px;">
     <br><br>
 
     <section class="footer">
@@ -292,7 +312,7 @@
             </div>
         </div>
     </section>
-    <section style="height: 50vh;"></section>
+    <!-- <section style="height: 50vh;"></section> -->
 
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/f9c54bfd45.js" crossorigin="anonymous"></script>
