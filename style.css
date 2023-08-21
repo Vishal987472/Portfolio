@@ -407,7 +407,7 @@ ul {
 /* skills section 2 */
 
 .sec2-skills{
-    background-color: rgb(201, 201, 201);
+    background-color: var(--primary-text-color);
 }
 .sec2-skill-container{
     /* padding: var(--padding-inline-section); */
@@ -432,8 +432,8 @@ ul {
     font-size: xx-large;
 }
 .skill-tittle{
-    color: gray;
-    margin-top: -130px;
+    color: white;
+    margin-top: -150px;
     width: 250px;
     rotate: -90deg;
 }
