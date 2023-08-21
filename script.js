@@ -76,21 +76,21 @@ setTimeout(() => {
     pop_up_remove()
 }, 8000)
 
-function pop_up_add() {
-    pop_up.removeAttribute('hidden')
-    for (let index = 0; index < sections.length; index++) {
-        // sections[index].setAttribute('hidden', 'true')
-        sections[index].style.opacity = '.1'
-    }
-}
-function pop_up_remove() {
-    pop_up.setAttribute('hidden', 'true')
-    for (let index = 0; index < sections.length; index++) {
-        // sections[index].removeAttribute('hidden')
-        sections[index].style.opacity = '1'
-    }
-}
-pop_up_i.addEventListener('click',pop_up_remove)
+// function pop_up_add() {
+//     pop_up.removeAttribute('hidden')
+//     for (let index = 0; index < sections.length; index++) {
+//         // sections[index].setAttribute('hidden', 'true')
+//         sections[index].style.opacity = '.1'
+//     }
+// }
+// function pop_up_remove() {
+//     pop_up.setAttribute('hidden', 'true')
+//     for (let index = 0; index < sections.length; index++) {
+//         // sections[index].removeAttribute('hidden')
+//         sections[index].style.opacity = '1'
+//     }
+// }
+// pop_up_i.addEventListener('click',pop_up_remove)
 
 
 
@@ -132,3 +132,21 @@ window.addEventListener("scroll", () => {
 scroll_btn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+let tools=document.getElementsByClassName('btn-tools')[0]
+let skills=document.getElementsByClassName('btn-skills')[0]
+let skills_images=document.getElementsByClassName('skill-images')[0]
+let tools_images=document.getElementsByClassName('tools-images')[0]
+
+skills.addEventListener('click',()=>{
+    skills.classList.add('btn-active')
+    tools.classList.remove('btn-active')
+    skills_images.style.display="block"
+    tools_images.style.display="none"
+})
+tools.addEventListener('click',()=>{
+    tools.classList.add('btn-active')
+    skills.classList.remove('btn-active')
+    skills_images.style.display="none"
+    tools_images.style.display="block"
+})
