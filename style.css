@@ -407,7 +407,7 @@ ul {
 /* skills section 2 */
 
 .sec2-skills{
-    background-color: var(--primary-text-color);
+    background-color: rgb(201, 201, 201);
 }
 .sec2-skill-container{
     /* padding: var(--padding-inline-section); */
@@ -432,8 +432,8 @@ ul {
     font-size: xx-large;
 }
 .skill-tittle{
-    color: white;
-    margin-top: -150px;
+    color: gray;
+    margin-top: -130px;
     width: 250px;
     rotate: -90deg;
 }
@@ -998,6 +998,10 @@ i:hover {
     * {
         font-size: small;
     }
+    body{
+        width: 50vh;
+        overflow-x: hidden;
+    }
 
     .primary-button {
         padding: 8px 7px;
@@ -1101,8 +1105,132 @@ i:hover {
     }
 
     /* Section 2 */
-    
-    
+    .sec2-skills{
+        width: 50vh;
+    }
+    .sec2-skill-container{
+        padding: 0;
+        flex-direction: column;
+    }
+    .skill-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 46vh;
+        margin: 0;
+        padding: 30px;
+    }
+    .skill-header h1 span{
+        color: white;
+        font-size: xx-large;
+    }
+    .skill-tittle{
+        margin: 0;
+        margin-left: -290px;
+        color: white;
+    }
+    .skill-images,.tools-images{
+        padding: 25px;
+        width: 100%;
+    }
 
+    /* Section 3 */
+    .sec3-projects{
+        width: 50vh;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .sec3-container{
+        width: 100%;
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+    .sec3-container .pro{
+        width: 100%;
+    }
+
+    /* Section 4 */
+
+    .sec4-about-me{
+        width: 50vh;
+        padding: 20px;
+        margin: 0;
+    }
+    .first-container {
+        align-items: flex-start !important;
+        gap: 0;
+        padding-inline: 10px;
+    }
+    .sec4-about-img img{
+        width: 310px !important;
+        height: 310px !important;
+    }
+    .about-head{
+        padding-inline: 20px;
+    }
+    .about-head h3{
+       margin-left: -40px;
+    }
+    .about-head p{
+        text-align: center;
+    }
+
+    /* Second container of sec 3 */
+
+    .second-container{
+        padding-right: 5px;
+        flex-wrap: wrap;
+    }
+    .second-container a{
+        width: 50%;
+    }
+
+
+    /*Section 4*/
+    .sec4-image{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Section 5 */
+
+    .sec5-contact{
+        margin: 0;
+        padding: 0;
+        width: 50vh;
+    }
+    .sec5-container{
+        width: 50vh;
+        margin: 0;
+    }
+    .sec5-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Footer */
+
+    .footer{
+        width: 50vh;
+    }
+    .footer-container h1{
+        padding: 0;
+    }
+    .footer-container a{
+        padding: 0;
+        margin-right: 40px;
+    }
+
+    /* Aks button */
+    .ask-btn{
+        left: 35vh;
+    }
+    .ask-btn a,.scroll-top a {
+        width: 80px;
+    }
+    .scroll-top{
+        left: 18vh;
+    }
 }
 
