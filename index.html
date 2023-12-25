@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div hidden id="pop-up" class="pop-up-cont">
+    <div hidden id="pop-up" class="pop-up-cont" style="z-index: 2;">
         <div class="pop-up">
             <div class="pop-icon">
                 <i class="fa-solid fa-x"></i>
@@ -66,43 +66,45 @@
         <svg class="svg1" height="100" width="100">
             <circle cx="50" cy="50" r="50" fill="#2EB4A7" />
         </svg>
-        <div class="container flex sec-1-container">
+        <div class="container flex sec-1-container" style="text-align: center; margin-block: 60px;">
             <div class="about-me">
                 <h1>Welcome,</h1>
                 <h1 class="head-2">I'm <span id="sec1-name">Sagar Singh</span></h1>
                 <p>I am a Frontend Web Designer, and i am at learning Phase Learning new technologies.</p>
-                <p>A frontend web developer who is learning is someone who is actively acquiring the skills and
+                <p style="padding-inline: 100px;">A frontend web developer who is learning is someone who is actively acquiring the skills and
                     knowledge necessary to build user interfaces and interactive elements for websites.</p>
                 <a href="https://github.com/SAGARSINGH-1"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/sagar-singh-97a600221/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://instagram.com/sagar_marc?igshid=MzNlNGNkZWQ4Mg=="><i
                         class="fa-brands fa-instagram"></i></a>
-                <div class="sec1-btn flex">
+                <div class="sec1-btn flex" style="justify-content: center;">
                     <a href="#contact" class="secondary-button">Hire me</a>
                     <p>or</p>
                     <a href="#projects" class="primary-button">Watch my Work</a>
                 </div>
-            </div>
-            <div class="about-img">
-                <img src="./img/sec-1.png" alt="">
             </div>
         </div>
     </section>
 
     <section class="sec2-skills" id="skills">
         <div class="container sec2-skill-container flex">
-             <div class="skill-tittle">
+            <div class="skill-tittle">
                 -------My Skills
-             </div>
-             <div class="skill-header flex">
+            </div>
+            <div class="skill-header flex">
                 <h1>What My Programming<br> Skills Included</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut est nam alias atque ipsa ut quasi ea doloribus qui, deleniti minus, in quam ducimus quia ipsum magni quibusdam et velit?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut est nam alias atque ipsa ut quasi ea
+                    doloribus qui, deleniti minus, in quam ducimus quia ipsum magni quibusdam et velit?</p>
                 <div class="double-btn flex">
-                    <div class="btn-skills btn-active"><p>Skills</p></div>
-                    <div class="btn-tools"><p>Tools</p></div>
-                </div>                
-             </div>
-             <div class="skill-images flex">
+                    <div class="btn-skills btn-active">
+                        <p>Skills</p>
+                    </div>
+                    <div class="btn-tools">
+                        <p>Tools</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-images flex">
                 <img src="./img/sec2-c++.png" alt="" srcset="">
                 <img src="./img/sec2-html5.png" alt="" srcset="">
                 <img src="./img/sec2-c.png" alt="" srcset="">
@@ -111,15 +113,22 @@
                 <img src="./img/sec2-js.png" alt="" srcset="">
                 <img src="./img/sec2-php.png" alt="" srcset="">
                 <img src="./img/sec2-py.png" alt="" srcset="">
-                <img src="./img/sec2-react.jpeg" alt="" srcset="">
-             </div>
-             <div class="tools-images flex">
+                <img src="https://th.bing.com/th/id/R.f81a6f373c244b1f70f4b7402b5ab372?rik=rbXh4ieLuKt%2bmA&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f09%2fReact_logo_logotype_emblem.png&ehk=QhGOkKcUKCU7FBQgHOajOiJqJBACUTD2Ni6LsfqzCEA%3d&risl=&pid=ImgRaw&r=0" alt="" srcset="">
+                <img src="https://s3.amazonaws.com/codenewbie-assets/original/square-logo-pink.png?1644202999" alt="appwrite">
+            </div>
+            <div class="tools-images flex">
                 <img src="./img/sec4-software-vs-code.png" alt="" srcset="">
                 <img src="./img/sec4-software-figma.png" alt="" srcset="">
                 <img src="./img/sec4-software-github.png" alt="" srcset="">
                 <img src="./img/sec4-software-pp.png" alt="" srcset="">
                 <img src="./img/sec4-software-word.png" alt="" srcset="">
-             </div>
+                <img src="https://s3.amazonaws.com/codenewbie-assets/original/square-logo-pink.png?1644202999" alt="appwrite">
+                <img src="https://i0.wp.com/programmingwithmosh.com/wp-content/uploads/2020/02/reduxlogo.png?ssl=1"
+                    alt="Redux">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png"  alt="git">
+                <img src="https://i.pinimg.com/originals/17/dd/84/17dd84fe75c8ba1ca26aa18b3570b65b.png"
+                    alt="vercel">
+            </div>
         </div>
     </section>
 
@@ -128,50 +137,58 @@
         <p>Not Satisfied to own projects.</p>
         <div class="container flex sec3-container">
             <div class="pro">
-                <img src="./img/sec2-html5.png">
-                <img src="./img/sec2-css.png">
-                <img src="./img/sec2-js.png">
-                <img src="./img/sec2-php.png">
-                <h1>Login page with backend</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium reiciendis laborum
-                    blanditiis, ut maxime ratione minima reprehenderit at, error, veritatis deleniti praesentium iste
-                    iusto sed recusandae soluta debitis! Adipisci vel autem dolore earum!</p>
+                <img src="https://th.bing.com/th/id/OIP.PHBTJoshbg880IH9z_PB6QHaHa?rs=1&pid=ImgDetMain"
+                    alt="JavaScript">
+                <img src="https://oneteamsolutions.in/blogoneteam/wp-content/uploads/2020/05/REACT-JS-KOCHI.png"
+                    alt="Reactjs">
+                <img src="https://codekitapp.com/images/help/free-tailwind-icon@2x.png" alt="TailwindCss">
+                <img src="https://seekvectors.com/storage/images/a4785e17ebbd5492885f255ebbdaf8d9.jpg" alt="appwrite">
+                <img src="https://i0.wp.com/programmingwithmosh.com/wp-content/uploads/2020/02/reduxlogo.png?ssl=1"
+                    alt="Redux">
+                <h1><a href="https://code-and-blog.vercel.app">CodeAndBlog</a></h1>
+                <p>CodeAndBlog is your go-to destination for a harmonious blend of coding expertise and insightful
+                    blogging. Dive into a world where the art of coding meets the finesse of storytelling.</p>
                 <div class="btn-div flex">
-                    <a class="primary-button project-btn">Source code</a>
-                    <a class="secondary-button project-btn">Download zip</a>
+                    <a target="_blank" class="primary-button project-btn"
+                        href="https://code-and-blog.vercel.app">Visit</a>
+                    <a target="_blank" class="secondary-button project-btn"
+                        href="https://github.com/SAGARSINGH-1/CodeAndBlog">Source code</a>
                 </div>
             </div>
             <div class="pro">
-                <img src="./img/sec2-php.png">
-                <h1>Login page with backend</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium reiciendis laborum
-                    blanditiis, ut maxime ratione minima reprehenderit at, error, veritatis deleniti praesentium iste
-                    iusto sed recusandae soluta debitis! Adipisci vel autem dolore earum!</p>
+                <img src="https://th.bing.com/th/id/OIP.PHBTJoshbg880IH9z_PB6QHaHa?rs=1&pid=ImgDetMain"
+                    alt="JavaScript">
+                <img src="https://oneteamsolutions.in/blogoneteam/wp-content/uploads/2020/05/REACT-JS-KOCHI.png"
+                    alt="Reactjs">
+                <img src="https://codekitapp.com/images/help/free-tailwind-icon@2x.png" alt="TailwindCss">
+                <img src="https://i0.wp.com/programmingwithmosh.com/wp-content/uploads/2020/02/reduxlogo.png?ssl=1"
+                    alt="Redux">
+                <h1><a href="https://quiz-app-clg.vercel.app/">Quiz Website</a></h1>
+                <p>Quizzy is an interactive and user-friendly quiz application designed to entertain and challenge users
+                    with a variety of quiz categories and yes it is Open Source.</p>
                 <div class="btn-div flex">
-                    <a class="primary-button project-btn">Source code</a>
-                    <a class="secondary-button project-btn">Download zip</a>
+                    <a target="_blank" href="https://quiz-app-clg.vercel.app/"
+                        class="primary-button project-btn">Visit</a>
+                    <a target="_blank" href="https://github.com/SAGARSINGH-1/Quiz-App"
+                        class="secondary-button project-btn">Source code</a>
                 </div>
             </div>
             <div class="pro">
-                <img src="./img/sec2-css.png">
-                <h1>Login page with backend</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium reiciendis laborum
-                    blanditiis, ut maxime ratione minima reprehenderit at, error, veritatis deleniti praesentium iste
-                    iusto sed recusandae soluta debitis! Adipisci vel autem dolore earum!</p>
+                <img src="https://th.bing.com/th/id/OIP.PHBTJoshbg880IH9z_PB6QHaHa?rs=1&pid=ImgDetMain"
+                    alt="JavaScript">
+                <img src="https://oneteamsolutions.in/blogoneteam/wp-content/uploads/2020/05/REACT-JS-KOCHI.png"
+                    alt="Reactjs">
+                <img src="https://codekitapp.com/images/help/free-tailwind-icon@2x.png" alt="TailwindCss">
+                <img src="https://i0.wp.com/programmingwithmosh.com/wp-content/uploads/2020/02/reduxlogo.png?ssl=1"
+                    alt="Redux">
+                <h1><a target="_blank" href="https://shop-next-buy.vercel.app/">ShopNext</a></h1>
+                <p>ShopNext is a full-fledged E-commerce website built with React and Tailwind CSS. Dive into a modern
+                    and responsive shopping experience, exploring a curated selection of products.</p>
                 <div class="btn-div flex">
-                    <a class="primary-button project-btn">Source code</a>
-                    <a class="secondary-button project-btn">Download zip</a>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="./img/sec2-js.png">
-                <h1>Login page with backend</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium reiciendis laborum
-                    blanditiis, ut maxime ratione minima reprehenderit at, error, veritatis deleniti praesentium iste
-                    iusto sed recusandae soluta debitis! Adipisci vel autem dolore earum!</p>
-                <div class="btn-div flex">
-                    <a class="primary-button project-btn">Source code</a>
-                    <a class="secondary-button project-btn">Download zip</a>
+                    <a target="_blank" href="https://shop-next-buy.vercel.app/"
+                        class="primary-button project-btn">Visit</a>
+                    <a target="_blank" href="https://github.com/SAGARSINGH-1/ShopNext"
+                        class="secondary-button project-btn">Source code</a>
                 </div>
             </div>
         </div>
@@ -232,11 +249,17 @@
                     </div>
                 </div>
                 <div class="sec4-image flex">
-                    <a class="01"><img style="width: 80px; height: 50px;" src="./img/sec4-software-word.png"></a>
-                    <a class="02"><img style="width: 60px; height: 60px;" src="./img/sec4-software-github.png"></a>
-                    <a class="03"><img style="width: 60px; height: 60px;" src="./img/sec4-software-pp.png"></a>
-                    <a class="04"><img style="width: 85px; height: 55px;" src="./img/sec4-software-figma.png"></a>
-                    <a class="05"><img style="width: 50px; height: 50px;" src="./img/sec4-software-vs-code.png"></a>
+                    <a class="02"><img style="width: 70px; height: 60px;"
+                            src="https://th.bing.com/th/id/OIP.PHBTJoshbg880IH9z_PB6QHaHa?rs=1&pid=ImgDetMain"
+                            alt="JavaScript"></a>
+                    <a class="01"><img style="width: 60px; height: 60px;"
+                            src="https://oneteamsolutions.in/blogoneteam/wp-content/uploads/2020/05/REACT-JS-KOCHI.png"
+                            alt="Reactjs"></a>
+                    <a class="02"><img style="width: 50px; height: 50px;"
+                            src="https://codekitapp.com/images/help/free-tailwind-icon@2x.png"></a>
+                    <a class="04"><img style="width: 60px; height: 55px;"
+                            src="https://seekvectors.com/storage/images/a4785e17ebbd5492885f255ebbdaf8d9.jpg"></a>
+                    <a class="05"><img style="width: 50px; height: 50px;" src="./img/sec4-software-github.png"></a>
                 </div>
             </div>
             <div class="line"></div>
@@ -259,8 +282,8 @@
                         class="fa-sharp fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+911234567891</a>
                 <br>
 
-                <a href="#" class="sec5-location"><i
-                        class="fa-sharp fa-solid fa-envelope-circle-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123@gmail.com</a>
+                <a href="mailto:sagar.01ko@gmail.com" class="sec5-location"><i
+                        class="fa-sharp fa-solid fa-envelope-circle-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sagar.01ko@gmail.com</a>
             </div>
             <div class="sec5-form">
                 <P>Let's get in touch. Send me a message:</P>
@@ -271,12 +294,10 @@
                 <input class="contact-input" type="email" placeholder="Email" required>
                 <br>
                 <label>Subject : </label>
-                <input class="contact-input" class="subject" type="text" placeholder="Subject"
-                    required>
+                <input class="contact-input" class="subject" type="text" placeholder="Subject" required>
                 <br>
                 <label>Message : </label>
-                <input class="contact-input" class="message" type="text" placeholder="Message"
-                    required>
+                <input class="contact-input" class="message" type="text" placeholder="Message" required>
             </div>
         </div>
 
