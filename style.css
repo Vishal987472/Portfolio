@@ -38,6 +38,7 @@ ul {
 
 
 /* Utilities */
+
 .clr {
     color: var(--primary-text-color);
 }
@@ -342,20 +343,7 @@ ul {
     justify-content: space-between;
 }
 
-.about-me a {
-    text-align: center;
-}
 
-.about-me a i {
-    font-size: 30px;
-    margin-left: 47px;
-    margin-block: 12px;
-    transition: .4s ease-out;
-}
-
-.about-me a i:hover {
-    color: var(--primary-text-color);
-}
 
 .sec1-btn {
     gap: 18px;
@@ -799,9 +787,10 @@ i:hover {
 
 /* Social handles */
 
-.sec5-social-handles {
-    padding: var(--padding-inline-section);
-
+.social-handles {
+    /* padding: var(--padding-inline-section); */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .footer-container {
@@ -811,17 +800,24 @@ i:hover {
     color: var(--primary-text-color);
 }
 
-.footer-container h1 {
+/* .footer-container h1 {
     padding-left: 79px;
-}
+} */
 
-.sec5-social-handles {
-    font-size: 30px;
-}
 
-.sec5-social-handles a {
+.social-handles a {
+    font-size: 40px;
     padding-top: 12px;
-    padding-left: 39px;
+    margin-right: 20px;
+    /* padding-left: 39px; */
+}
+
+.social-handles a i {
+    transition: .4s ease-out;
+}
+
+.social-handles a i:hover {
+    color: var(--primary-darker);
 }
 
 
