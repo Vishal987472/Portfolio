@@ -496,7 +496,7 @@ ul {
 }
 
 .sec3-container {
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     row-gap: 22px;
 }
@@ -838,6 +838,18 @@ i:hover {
     padding: 28px;
     transition: .5s ease-in-out;
 }
+
+
+.sec3-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.sec3-container p {
+    margin-block: 24px;
+}
+
+
     /* Utilities edit */
 
     .primary-button {
